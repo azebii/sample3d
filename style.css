@@ -4,7 +4,7 @@
         height: 100svh;
         left: calc(50svw - 25svh);
         top: 0;
-        position: absolute;
+        position: fixed;
     }
 }
 
@@ -14,7 +14,7 @@
         height: 200svw;
         left: 0;
         top: calc(50svh - 100svw);
-        position: absolute;
+        position: fixed;
     }
 }
 
@@ -43,6 +43,10 @@ input[type="button"].selected {
 body {
     background-color: #000;
     color: #FFF;
+    position: fixed;
+    left: 0;
+    right: 0;
+    overflow: hidden;
 }
 
 body, html {
