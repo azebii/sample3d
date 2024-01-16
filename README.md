@@ -1,2 +1,2 @@
-# Webgl2 Shading Sample
-[PLAY](https://azebii.github.io/webgl2/)
+# sample3D
+[PLAY](https://azebii.github.io/sample3D/)
