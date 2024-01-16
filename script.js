@@ -204,12 +204,12 @@ canvas.addEventListener('pointerleave', (event) => {
 })
 const resize = () => {
     const r = window.devicePixelRatio
-    const w = Math.floor(window.innerWidth)
-    const h = Math.floor(window.innerHeight)
+    const w = Math.floor(window.innerWidth * r)
+    const h = Math.floor(window.innerHeight * r)
     if(w / h <= 1 / 2)
-        renderer.resize(w, w)
+        renderer.resize(w / 2, w / 2)
     else
-        renderer.resize(h, h)
+        renderer.resize(h / 2, h / 2)
 }
 resize()
 window.addEventListener('resize', resize)
