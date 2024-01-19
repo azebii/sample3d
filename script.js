@@ -25,16 +25,16 @@ const canvas = document.createElement('canvas')
 div.append(canvas)
 const flatButton = document.createElement('input')
 flatButton.type = 'button'
-flatButton.value = 'Flat'
+flatButton.value = 'Surface Lighting'
 flatButton.className = 'selected'
 div.append(flatButton)
 const vertexButton = document.createElement('input')
 vertexButton.type = 'button'
-vertexButton.value = 'Vertex'
+vertexButton.value = 'Vertex Lighting'
 div.append(vertexButton)
 const fragmentButton = document.createElement('input')
 fragmentButton.type = 'button'
-fragmentButton.value = 'Fragment'
+fragmentButton.value = 'Fragment Lighting'
 div.append(fragmentButton)
 
 const renderer = new Renderer(canvas)
@@ -169,9 +169,9 @@ const click = (event) => {
     
     t.className = 'selected'
     
-    if(t.value === 'Flat') type = 'flat'
-    if(t.value === 'Vertex') type = 'vertex'
-    if(t.value === 'Fragment') type = 'fragment'
+    if(t.value === 'Surface Lighting') type = 'flat'
+    if(t.value === 'Vertex Lighting') type = 'vertex'
+    if(t.value === 'Fragment Lighting') type = 'fragment'
 }
 
 flatButton.addEventListener('click', click)
